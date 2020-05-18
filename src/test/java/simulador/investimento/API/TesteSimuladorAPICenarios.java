@@ -1,7 +1,6 @@
 package simulador.investimento.API;
 
 import static com.jayway.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
 import org.junit.FixMethodOrder;
