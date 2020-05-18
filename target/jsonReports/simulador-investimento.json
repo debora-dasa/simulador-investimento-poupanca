@@ -1,0 +1,226 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-18T13:19:16.868Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11470424600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SimuladorInvestimentoSteps.initWebDriver()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Simular investimento positivo",
+        "description": "",
+        "id": "simular-um-investimento-na-poupanca;simular-investimento-positivo;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4698102000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SimuladorInvestimentoSteps.disposerWebDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5573513100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "o usuario esta na pagina do simulador",
+            "match": {
+              "location": "SimuladorInvestimentoSteps.o_usuario_esta_na_pagina_do_simulador()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393478500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "informa o valor a aplicar \"20.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"20.00\"",
+                  "offset": 26
+                }
+              ],
+              "location": "SimuladorInvestimentoSteps.informa_o_valor_a_aplicar(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122220500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "informa o valor que quer poupar todo mes \"20.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"20.00\"",
+                  "offset": 41
+                }
+              ],
+              "location": "SimuladorInvestimentoSteps.informa_o_valor_que_quer_poupar_todo_mes(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86961100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "informa o tempo \"24\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"24\"",
+                  "offset": 16
+                }
+              ],
+              "location": "SimuladorInvestimentoSteps.informa_o_tempo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 338928400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicar em Simular",
+            "match": {
+              "location": "SimuladorInvestimentoSteps.clicar_em_Simular()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 627472800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "visualiza a tabela com simulacao",
+            "match": {
+              "location": "SimuladorInvestimentoSteps.visualiza_a_tabela_com_simulacao()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-18T13:19:40.216Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5344805800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SimuladorInvestimentoSteps.initWebDriver()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Simular investimento positivo valor mensal abaixo do permitido",
+        "description": "",
+        "id": "simular-um-investimento-na-poupanca;simular-investimento-positivo-valor-mensal-abaixo-do-permitido;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 653194400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SimuladorInvestimentoSteps.disposerWebDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6253638900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "o usuario esta novamente na pagina do simulador",
+            "match": {
+              "location": "SimuladorInvestimentoSteps.o_usuario_esta_novamente_na_pagina_do_simulador()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 193470700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "informa o valor a aplicar menor que vinte reais\"18.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"18.00\"",
+                  "offset": 47
+                }
+              ],
+              "location": "SimuladorInvestimentoSteps.informaOValorAAplicarMenorQueVinteReais(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "clico no campo valor mensal",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59900,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "visualiza a mensagem \"Valor minimo de R$ 20.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Valor minimo de R$ 20.00\"",
+                  "offset": 21
+                }
+              ],
+              "location": "SimuladorInvestimentoSteps.visualizoAMensagem(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Simular um Investimento na Poupanca",
+    "description": "",
+    "id": "simular-um-investimento-na-poupanca",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/simulador-investimento/simulador-investimento.feature",
+    "tags": []
+  }
+]
